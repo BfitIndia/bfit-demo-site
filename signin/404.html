@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BFIT sign-in</title>
+    <style>
+      :root { color-scheme: light; --ink: #111827; --muted: #6b7280; --line: #e5e7eb; --brand: #7c3aed; --bg: #faf5ff; --card: #ffffff; }
+      @media (prefers-color-scheme: dark) { :root { color-scheme: dark; --ink: #f3f4f6; --muted: #9ca3af; --line: #374151; --brand: #a78bfa; --bg: #111018; --card: #1c1a26; } }
+      * { box-sizing: border-box; }
+      body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--ink); }
+      main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+      h1 { font-size: 28px; margin: 0 0 6px; letter-spacing: -0.02em; }
+      p.lead { color: var(--muted); margin: 0 0 28px; }
+      a.card { display: block; padding: 20px; margin-bottom: 12px; border: 1px solid var(--line); border-radius: 16px; background: var(--card); color: inherit; text-decoration: none; }
+      a.card:hover, a.card:focus-visible { border-color: var(--brand); outline: none; }
+      a.card strong { display: block; font-size: 17px; }
+      a.card span { display: block; color: var(--muted); font-size: 14px; margin-top: 4px; }
+      .arrow { color: var(--brand); font-weight: 600; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Sign in to BFIT</h1>
+      <p class="lead">Choose the sign-in page for your account. Each one opens its own app.</p>
+      <a class="card" href="../bfit/login"><strong>BFIT staff <span class="arrow" aria-hidden="true">→</span></strong>
+        <span>BFIT and its employees: Super Admin, Sales, Accounts, IT Support.</span></a>
+      <a class="card" href="../partner/login"><strong>Partner Console <span class="arrow" aria-hidden="true">→</span></strong>
+        <span>Gym owners and their staff: managers, front desk, and the gym's own trainers and dietitians.</span></a>
+      <a class="card" href="../user/login"><strong>Members, trainers and dietitians <span class="arrow" aria-hidden="true">→</span></strong>
+        <span>Gym members, and outside trainers and dietitians approved by BFIT.</span></a>
+    </main>
+  </body>
+</html>
